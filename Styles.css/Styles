@@ -146,4 +146,71 @@ ul { list-style: none; }
   flex-wrap: wrap;
 }
 
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  font-family: var(--font-pixel);
+  font-size: 0.55rem;
+  border-radius: var(--radius);
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: transform 0.15s, opacity 0.15s;
+}
+ 
+.btn:hover { transform: translateY(-2px); opacity: 0.9; }
+.btn:active { transform: scale(0.97); }
+ 
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: 2px solid var(--accent);
+}
+ 
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--border);
+}
+ 
+.btn-secondary:hover { border-color: var(--accent); }
+ 
+/* ── 5. PIXEL ART DECORATIVO ── */
+.hero-art {
+  flex-shrink: 0;
+  text-align: center;
+}
+ 
+.pixel-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1.8rem);
+  grid-template-rows: repeat(5, 1.8rem);
+  gap: 4px;
+  margin-bottom: 1rem;
+}
+ 
+.pixel-grid span {
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--bg-surface);
+  border-radius: 2px;
+}
+ 
+.pixel-grid span[style] {
+  background: var(--c);
+  box-shadow: 0 0 8px var(--c);
+}
+ 
+.pixel-label {
+  font-family: var(--font-pixel);
+  font-size: 0.4rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  animation: blink 1.2s step-end infinite;
+}
+ 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
 
