@@ -1,0 +1,37 @@
+:root {
+  --bg-dark:       #0d0d0f;
+  --bg-card:       #16161a;
+  --bg-surface:    #1e1e24;
+  --accent:        #e63946;
+  --accent-yellow: #f4d03f;
+  --accent-green:  #2ecc71;
+  --text-primary:  #f0ede8;
+  --text-muted:    #8a8a9a;
+  --border:        #2a2a35;
+  --font-pixel:    'Press Start 2P', monospace;
+  --font-body:     'Rajdhani', sans-serif;
+  --radius:        8px;
+  --radius-lg:     14px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+html {
+  font-size: 16px;           /* base para rem */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+
